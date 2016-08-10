@@ -1,5 +1,38 @@
 package com.jenkins.maven.quickstart;
 
-public class JenkinsCloudTest {
+import junit.framework.Test;
+import junit.framework.TestCase;
+import junit.framework.TestSuite;
 
+/**
+ * Unit test for simple App.
+ */
+public class JenkinsCloudTest 
+    extends TestCase
+{
+    /**
+     * Create the test case
+     *
+     * @param testName name of the test case
+     */
+    public JenkinsCloudTest( String testName )
+    {
+        super( testName );
+    }
+
+    /**
+     * @return the suite of tests being tested
+     */
+    public static Test suite()
+    {
+        return new TestSuite( JenkinsCloudTest.class );
+    }
+
+    /**
+     * Rigourous Test :-)
+     */
+    public void testApp()
+    {
+        assertTrue( true );
+    }
 }
